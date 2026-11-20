@@ -1,5 +1,9 @@
 package com.rays.Stream;
+
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.stream.Collectors;
+
 public class LuckDraw {
 	public static void main(String[] args) {
 		
@@ -15,6 +19,17 @@ public class LuckDraw {
 	list.add(new Contestant("Karan", "9765432109"));
 	list.add(new Contestant("Arjun", "9898765432"));
 
+	list.stream().map(e ->e.phone);
+	list.stream().map(e -> e.phone).filter(e -> e.length() == 10).forEach(System.out::println);
+	System.out.println("-------------------------");
+	list.stream().map(e -> e.phone).filter(e -> e.length() == 10).distinct();
+	list.stream().map(e -> e.phone).filter(e -> e.length() == 10).distinct().collect(Collectors.collectingAndThen(Collectors.toList(),e -> {
+		
+		Collections.shuffle(e);
+		return e.stream();
+	})).limit(3).forEach(System.out::println);
 	
-	}	
+
+	
+  }
 }
