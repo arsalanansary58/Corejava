@@ -1,4 +1,4 @@
-package com.rays.IO;
+package com.rays.io;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -15,3 +15,4 @@ public class TestBufferedWriter {
 	   System.out.println("java file write successfully");
 	}
 }
+   

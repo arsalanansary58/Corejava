@@ -1,4 +1,4 @@
-package com.rays.IO;
+package com.rays.io;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -17,7 +17,7 @@ public static void main(String[] args) throws IOException {
 		 System.out.println(i);
 		 out.write(i);
 		 i = in.read();
-	 }
+ 	 }
 	 in.close();
 	 out.close();
 	 System.out.println("successfully........");

@@ -1,4 +1,4 @@
-package com.rays.IO;
+package com.rays.io;
 import java.io.FileWriter;
 import java.io.IOException;
 

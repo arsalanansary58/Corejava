@@ -1,4 +1,4 @@
-package com.rays.IO;
+package com.rays.io;
 
 import java.io.FileReader;
 import java.io.IOException;
